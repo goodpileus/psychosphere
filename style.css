@@ -2,7 +2,7 @@ body{
 	/* font-family: helvetica, sans-serif; */
 	/* color: #000000; */
 	background-color: #000000;
-	cursor: crosshair;
+	cursor: help;
 	pointer-events: none;
 }
 
@@ -73,7 +73,6 @@ img {
 	justify-content: center;
 	align-items: center;
   transition: opacity .5s ease;
-  cursor:crosshair;
 	overflow: hidden;
 	color:white;
 }
@@ -97,7 +96,6 @@ img {
 	justify-content: center;
 	align-items: center;
   transition: opacity .5s ease;
-  /* cursor:crosshair; */
 	color:white;
 
 }
