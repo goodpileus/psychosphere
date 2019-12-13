@@ -138,49 +138,68 @@ iframe {
 	top:0;
 	left:0;
 	display: flex;
+	/* flex-direction: column; */
 	justify-content: center;
 	align-items: center;
 	pointer-events: none;
-	z-index: 999999;
+	z-index: 9999;
+}
 
+.friendship {
+	position: absolute;
+	min-width:25%;
+	max-width: 25%;
+	min-height: auto;
+	opacity: 0;
+	transition: opacity .1s ease;
+	display: none;
+}
+
+.aeterna {
+	bottom:2rem;
+}
+
+.amiticia {
+	top:2rem;
 }
 
 .sun {
-	/* position: absolute; */
-	width:300px;
+	position: absolute;
+	width:400px;
 	opacity: 0;
 	transition: opacity .1s ease;
 }
 
 .sun img {
 	max-width: 100%;
-	filter: blur(6px);
-	animation: spin 20s linear infinite;
+	filter: blur(4px);
+	animation: spin 50s linear infinite;
 }
 
-.show{
-	opacity:1;
+.names {
+	position: absolute;
+	width:550px;
+	max-width: 100vw;
+	opacity: 0;
+	transition: opacity .1s ease;
 }
 
-.smell-text {
-  position: fixed;
-  text-align: center;
-  width:200px;
-  color:rgb(81, 166, 102);
-  font-style: italic;
-  /* background:white; */
-  padding:6px 0;
-  /* height:30px; */
-  bottom:20px;
-  left:50px;
-  backdrop-filter:invert(1);
-  /* top:-30px; */
-  z-index: 9999999;
-  /* border-radius: 10px; */
-  opacity: 0;
+.names img {
+	max-width: 100%;
+	/* filter: blur(.5px); */
+	animation: spin 200s linear infinite;
+}
+
+.phrase {
+	position: absolute;
+	bottom:2rem;
+	min-height: auto;
+	min-width: 40vw;
+	max-width: 40vw;
+	opacity: 0;
+	transition: opacity .1s ease;
+	pointer-events: none;
 	display: none;
-  /* transition: opacity .2s ease; */
-  /* overflow: hidden; */
 }
 
 .bar {
@@ -196,6 +215,21 @@ iframe {
 	/* pointer-events: none; */
 	transition: width .1s ease;
 	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	overflow: hidden;
+	z-index: 99;
+
+}
+
+
+.show{
+	opacity:1;
+}
+
+::selection {
+	background: transparent;
 }
 
 
@@ -211,5 +245,18 @@ iframe {
 	}
 	100% {
 		transform: rotate(360deg);
+	}
+}
+
+@media (max-width:1000px) {
+	.phrase {
+		/* min-width: 100vw; */
+		max-width: 100vw;
+		max-height: 60vh;
+	}
+	.grow {
+		/* transform: scaleX(2); */
+		background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 3%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 97%, rgba(255,255,255,0) 100%);
+		width:100vw;
 	}
 }

@@ -3,6 +3,7 @@ window.onload = function() {
 	document.body.style.pointerEvents = "all";
 	document.getElementById("wrapper").style.opacity = "1";
 	$(".sun").toggleClass("show");
+	$(".phrase").toggleClass("show");
 }
 
 // random list //
@@ -97,4 +98,7 @@ $( ".slide-wrap" ).click(function() {
 $( ".bar" ).click(function() {
 	$(".bar").toggleClass("grow");
 	$(".sun").toggleClass("show");
+	$(".names").toggleClass("show");
+	$(".friendship").toggleClass("show");
+	$(".phrase").toggleClass("show");
 });
