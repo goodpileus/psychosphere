@@ -93,6 +93,9 @@ $("#smell").hover(function(){
 $( ".slide-wrap" ).click(function() {
 	plusDivs(1);
   plusDivs2(1);
+  var obj = document.createElement("audio");
+      obj.src = "sound/click4.ogg";
+      obj.play();
 });
 
 $( ".bar" ).click(function() {
@@ -103,4 +106,16 @@ $( ".bar" ).click(function() {
   $(".phrase").toggleClass("show");
   $(".slide").toggleClass("left");
 	$(".slide2").toggleClass("right");
+});
+
+$('.bar').on('click', function () {
+    if ($(".bar").hasClass("grow")) {
+    var obj = document.createElement("audio");
+        obj.src = "sound/healspell2.wav";
+        obj.play();
+    } else {
+    var obj = document.createElement("audio");
+        obj.src = "sound/healspell1.wav";
+        obj.play();
+    }
 });
