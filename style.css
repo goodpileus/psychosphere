@@ -166,7 +166,7 @@ iframe {
 
 .sun {
 	position: absolute;
-	width:40vh;
+	width:55vh;
 	opacity: 0;
 	transition: opacity .1s ease;
 }
@@ -179,7 +179,7 @@ iframe {
 
 .names {
 	position: absolute;
-	width:50vh;
+	width:65vh;
 
 	max-width: 100vw;
 	opacity: 0;
