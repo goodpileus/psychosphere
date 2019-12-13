@@ -100,5 +100,7 @@ $( ".bar" ).click(function() {
 	$(".sun").toggleClass("show");
 	$(".names").toggleClass("show");
 	$(".friendship").toggleClass("show");
-	$(".phrase").toggleClass("show");
+  $(".phrase").toggleClass("show");
+  $(".slide").toggleClass("left");
+	$(".slide2").toggleClass("right");
 });
