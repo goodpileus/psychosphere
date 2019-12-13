@@ -1,6 +1,8 @@
 window.onload = function() {
   console.log(':-)');
-  document.getElementById("wrapper").style.opacity = "1";
+	document.body.style.pointerEvents = "all";
+	document.getElementById("wrapper").style.opacity = "1";
+	$(".sun").toggleClass("show");
 }
 
 // random list //
@@ -90,4 +92,9 @@ $("#smell").hover(function(){
 $( ".slide-wrap" ).click(function() {
 	plusDivs(1);
   plusDivs2(1);
+});
+
+$( ".bar" ).click(function() {
+	$(".bar").toggleClass("grow");
+	$(".sun").toggleClass("show");
 });
